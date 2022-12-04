@@ -13,6 +13,12 @@
         <title>Нутрициолог, консультант по питанию Мария Изгалина</title>
 
         <style>
+            @font-face {
+                font-family: 'ofont.ru_Sweet Mavka Script';
+                src: local('ofont.ru_Sweet Mavka Script'),
+                    url(./fonts/ofont.ru_Sweet\ Mavka\ Script.ttf);
+            }
+
             .programmfor {
                 background: linear-gradient(45deg, #ff8800, #91ff00);
                 /* background-image: url(./img/background2.jpeg); */
@@ -23,14 +29,170 @@
 
     <body>
         <!-- Nav start -->
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Главная</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">О моей программе</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="#">Наши результаты</a>
-            <a class="flex-sm-fill text-sm-center nav-link active" href="./lk.html" target="_blank">Личный кабинет и
+        <nav class="navbar navbar-info bg-info">
+            <a class="flex-sm-fill text-sm-center nav-link"
+                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
+                href="./nutrition.html">Главная</a>
+            <a class="flex-sm-fill text-sm-center nav-link"
+                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
+                href="./about.html" target="_blank">О моей программе</a>
+            <a class="flex-sm-fill text-sm-center nav-link"
+                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
+                href="#">Наши результаты</a>
+            <a class="flex-sm-fill text-sm-center nav-link active"
+                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
+                href="./lk.html" target="_blank">Личный кабинет и
                 регистрация</a>
         </nav>
         <!-- Nav end -->
+        <div style="text-align: center;">
+            <img src="./img/baner1.png" class="d-block w-100" alt="">
+        </div>
+        <!-- Button trigger modal -->
+        <div style="text-align: end;">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#staticBackdrop">
+                Обо мне
+            </button>
+        </div>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div>
+                            <img class="bd-placeholder-img" style="border-radius: 100px;" src="./img/aboutme.png"
+                                alt="">
+                        </div>
+                        <h5 class="modal-title" id="staticBackdropLabel">Рада приветствовать вас!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Меня зовут Мария Изгалина, я нутрициолог, тренер по здоровому образу жизни, консультант по
+                        питанию для всей семьи, работаю онлайн, помогая людям достичь своих целей в плане коррекции
+                        веса, рациона питания по результатам персонального анализа, улучшения качества жизни, улучшения
+                        здоровья.
+
+                        Все, кто прошли мою авторскую программу, знают, что правильное питание, индивидуальный подбор
+                        продуктов, подбор витаминов и микроэлементов для улучшения общего состояния, это залог успеха!
+                        Мой личный опыт позволяет мне лучше чувствовать и понимать своих клиентов.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Start Who is this programm for? -->
+        <div class="programmfor">
+            <div class="jumbotron" style="background-image: url(./img/background2e.jpeg); position: local;">
+                <h1 class="display-4"
+                    style="text-align: center; font-size: 60px; font-family: 'ofont.ru_Sweet Mavka Script';">
+                    <b>Практическая нутрициология для всей семьи</b></h1>
+                <p class="lead"
+                    style="font-size: 42px; text-align: center; font-family: 'ofont.ru_Sweet Mavka Script';">
+                    Консультации по адаптивному питанию и
+                    здоровому образу жизни
+                    от Марии Изгалиной
+                    <br>Индивидуальное ведение до последнего ненужного килограмма</p>
+                <div style="text-align: center;">
+                    <a class="btn btn-danger btn-lg" style="text-align: center;" href="./about.html" target="_blank"
+                        role="button">Подробнее</a>
+                </div>
+                <h2 class="mt-5" style="font-size: 60px; font-family: 'ofont.ru_Sweet Mavka Script';">Вам подойдет моя
+                    программа, если вы
+                    хотите:</h2>
+            </div>
+        </div>
+
+
+        <div class="card-deck">
+            <div class="card">
+                <img src="./img/card1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Прийти к идеальному весу без голодовок и подсчета калорий</h5>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Быть здоровой и растить здоров детей</h5>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Повысить энергетический тонус, меньше уставать</h5>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Излучать счастье и здоровье</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-deck mt-4">
+            <div class="card">
+                <img src="./img/card5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Повысить желание заниматься спортом</h5>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Избавиться от болезней желудка, проблем с кожей, выпадением
+                        волос</h5>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Подобрать питание для себя и каждого члена семьи</h5>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/card8.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Научиться выбирать безопасные продукты</h5>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- End Who is this programm for? -->
 
         <!-- Carousel start -->
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -72,106 +234,6 @@
             </a>
         </div>
         <!-- Carousel end -->
-
-        <!-- Start Who is this programm for? -->
-        <div class="programmfor">
-            <div class="jumbotron" style="background-image: url(./img/background2e.jpeg); position: local;">
-                <h1 class="display-4">Привет, мир!</h1>
-                <p class="lead">Это простой компонент в стиле jumbotron для привлечения дополнительного внимания к
-                    избранному контенту или информации.</p>
-                <hr class="my-4">
-                <p>Он использует служебные классы для типографики и интервалов для размещения содержимого в более
-                    крупном контейнере.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Узнать больше</a>
-            </div>
-            <div class="card-deck">
-                <div class="card">
-                    <img src="./img/card1.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
-                            естественного
-                            перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/card2.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Эта подсказка имеет вспомогательный текст ниже как естественный ввод к
-                            дополнительному контенту.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/card3.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более широкая карта С вспомогательным текстом ниже в качестве
-                            естественного
-                            перехода к дополнительному контенту. Эта карточка имеет даже более длинный контент, чем
-                            первая,
-                            чтобы показать действие одинаковой высоты.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/card4.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
-                            естественного
-                            перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck mt-4">
-                <div class="card">
-                    <img src="./img/card5.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
-                            естественного
-                            перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/card6.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Эта подсказка имеет вспомогательный текст ниже как естественный ввод к
-                            дополнительному контенту.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/card7.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более широкая карта С вспомогательным текстом ниже в качестве
-                            естественного
-                            перехода к дополнительному контенту. Эта карточка имеет даже более длинный контент, чем
-                            первая,
-                            чтобы показать действие одинаковой высоты.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/card8.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Заголовок карточки</h5>
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве
-                            естественного
-                            перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                        <p class="card-text"><small class="text-muted">Последнее обновление: 3 мин. назад</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Who is this programm for? -->
 
         <!-- Дополнительный JavaScript; выберите один из двух! -->
 
