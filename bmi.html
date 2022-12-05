@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>BMI Calculator</title>
+        <title>Калькулятор ИМТ нутрициолога Марии Изгалиной</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
             integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -108,19 +108,36 @@
 
         <!-- Nav start -->
         <nav class="navbar navbar-info bg-info">
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./nutrition.html">Главная</a>
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./about.html" target="_blank">О моей программе</a>
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="#">Наши результаты</a>
-            <a class="flex-sm-fill text-sm-center nav-link active"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./lk.html" target="_blank">Личный кабинет и
-                регистрация</a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./nutrition.html">
+                Главная
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./bmi.html" target="_blank">
+                Узнайте свой ИМТ
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./about.html" target="_blank">
+                О моей программе
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="#">
+                Наши результаты
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link active" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./lk.html" target="_blank">
+                Личный кабинет и регистрация
+            </a>
         </nav>
         <!-- Nav end -->
 
@@ -158,7 +175,7 @@
                 let weight = parseInt(document.getElementById("weight").value);
                 document.getElementById("weight-val").textContent = weight + " кг";
 
-                var height = parseInt(document.getElementById("height").value);
+                let height = parseInt(document.getElementById("height").value);
                 document.getElementById("height-val").textContent = height + " см";
 
                 bmi = (weight / Math.pow((height / 100), 2)).toFixed(1);

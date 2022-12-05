@@ -1,14 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
     <head>
         <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous" />
 
         <title>Нутрициолог, консультант по питанию Мария Изгалина</title>
 
@@ -16,7 +17,7 @@
             @font-face {
                 font-family: 'ofont.ru_Sweet Mavka Script';
                 src: local('ofont.ru_Sweet Mavka Script'),
-                    url(./fonts/ofont.ru_Sweet\ Mavka\ Script.ttf);
+                    url(./fonts/ofont.ru_Sweet\Mavka\Script.ttf);
             }
 
             .programmfor {
@@ -37,9 +38,9 @@
                 transition: all 0.3s ease;
                 position: relative;
                 display: inline-block;
-                box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-                    7px 7px 20px 0px rgba(0, 0, 0, .1),
-                    4px 4px 5px 0px rgba(0, 0, 0, .1);
+                box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+                    7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+                    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
                 outline: none;
             }
 
@@ -51,7 +52,7 @@
 
             .btn-all:after {
                 position: absolute;
-                content: " ";
+                content: ' ';
                 z-index: -1;
                 top: 0;
                 left: 0;
@@ -64,59 +65,77 @@
 
             .btn-all:hover {
                 background: transparent;
-                box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-                    -4px -4px 6px 0 rgba(116, 125, 136, .2),
-                    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-                    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+                box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+                    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+                    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
                 color: #fff;
             }
 
             .btn-all:hover:after {
                 -webkit-transform: scale(2) rotate(180deg);
                 transform: scale(2) rotate(180deg);
-                box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-                    -4px -4px 6px 0 rgba(116, 125, 136, .2),
-                    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-                    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+                box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+                    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+                    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
             }
 
         </style>
     </head>
 
     <body>
+        <!-- Вариант 1: пакет jQuery и Bootstrap (включает Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+        </script>
         <!-- Nav start -->
         <nav class="navbar navbar-info bg-info">
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./nutrition.html">Главная</a>
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./bmi.html" target="_blank">Узнайте свой ИМТ</a>
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./about.html" target="_blank">О моей программе</a>
-            <a class="flex-sm-fill text-sm-center nav-link"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="#">Наши результаты</a>
-            <a class="flex-sm-fill text-sm-center nav-link active"
-                style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(241, 37, 180)"
-                href="./lk.html" target="_blank">Личный кабинет и
-                регистрация</a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./nutrition.html">
+                Главная
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./bmi.html" target="_blank">
+                Узнайте свой ИМТ
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./about.html" target="_blank">
+                О моей программе
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="#">
+                Наши результаты
+            </a>
+            <a class="flex-sm-fill text-sm-center nav-link active" style="font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+                color: rgb(241, 37, 180);" href="./lk.html" target="_blank">
+                Личный кабинет и регистрация
+            </a>
         </nav>
         <!-- Nav end -->
         <div style="text-align: center;">
-            <img src="./img/baner1.png" class="d-block w-100" alt="">
+            <img src="./img/baner1.png" class="d-block w-100" alt="" />
         </div>
-
 
         <!-- Button trigger modal -->
         <div style="text-align: right;">
-
             <button type="button" class="custom-btn btn-all" data-toggle="modal" data-target="#staticBackdrop">
                 Обо мне
             </button>
         </div>
-
 
         <!-- Модальное окно -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
@@ -126,25 +145,30 @@
                     <div class="modal-header">
                         <div>
                             <img class="bd-placeholder-img" style="border-radius: 100px;" src="./img/aboutme.png"
-                                alt="">
+                                alt="" />
                         </div>
-                        <h5 class="modal-title" id="staticBackdropLabel">Рада приветствовать вас!</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">
+                            Рада приветствовать вас!
+                        </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Меня зовут Мария Изгалина, я нутрициолог, тренер по здоровому образу жизни, консультант по
-                        питанию для всей семьи, работаю онлайн, помогая людям достичь своих целей в плане коррекции
-                        веса, рациона питания по результатам персонального анализа, улучшения качества жизни, улучшения
-                        здоровья.
-
-                        Все, кто прошли мою авторскую программу, знают, что правильное питание, индивидуальный подбор
-                        продуктов, подбор витаминов и микроэлементов для улучшения общего состояния, это залог успеха!
-                        Мой личный опыт позволяет мне лучше чувствовать и понимать своих клиентов.
+                        Меня зовут Мария Изгалина, я нутрициолог, тренер по здоровому образу
+                        жизни, консультант по питанию для всей семьи, работаю онлайн,
+                        помогая людям достичь своих целей в плане коррекции веса, рациона
+                        питания по результатам персонального анализа, улучшения качества
+                        жизни, улучшения здоровья. Все, кто прошли мою авторскую программу,
+                        знают, что правильное питание, индивидуальный подбор продуктов,
+                        подбор витаминов и микроэлементов для улучшения общего состояния,
+                        это залог успеха! Мой личный опыт позволяет мне лучше чувствовать и
+                        понимать своих клиентов.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">
+                            Закрыть
+                        </button>
                     </div>
                 </div>
             </div>
@@ -158,108 +182,123 @@
             data-social="wa,telegram,vi,vk,ok,fb,pinterest"></div>
         <!-- Соцсети готовый плагин конец-->
 
-
-
-
         <!-- Start Who is this programm for? -->
         <div class="programmfor">
             <div class="jumbotron" style="background-image: url(./img/background2e.jpeg); position: local;">
-                <h1 class="display-4"
-                    style="text-align: center; font-size: 60px; font-family: 'ofont.ru_Sweet Mavka Script';">
-                    <b>Практическая нутрициология для всей семьи</b></h1>
-                <p class="lead"
-                    style="font-size: 42px; text-align: center; font-family: 'ofont.ru_Sweet Mavka Script';">
-                    Консультации по адаптивному питанию и
-                    здоровому образу жизни
-                    от Марии Изгалиной
-                    <br>Индивидуальное ведение до последнего ненужного килограмма</p>
+                <h1 class="display-4" style="text-align: center;
+                    font-size: 60px;
+                    font-family: 'ofont.ru_Sweet Mavka Script';">
+                    <b>Практическая нутрициология для всей семьи</b>
+                </h1>
+                <p class="lead" style="font-size: 42px;
+                    text-align: center;
+                    font-family: 'ofont.ru_Sweet Mavka Script';">
+                    Консультации по адаптивному питанию и здоровому образу жизни от Марии
+                    Изгалиной
+                    <br />
+                    Индивидуальное ведение до последнего ненужного килограмма
+                </p>
                 <div style="text-align: center;">
                     <a class="btn btn-danger btn-lg" style="text-align: center;" href="./about.html" target="_blank"
-                        role="button">Подробнее</a>
+                        role="button">
+                        Подробнее
+                    </a>
                 </div>
-                <h2 class="mt-5" style="font-size: 60px; font-family: 'ofont.ru_Sweet Mavka Script';">Вам подойдет моя
-                    программа, если вы
-                    хотите:</h2>
+                <h2 class="mt-5" style="font-size: 60px; font-family: 'ofont.ru_Sweet Mavka Script';">
+                    Вам подойдет моя программа, если вы хотите:
+                </h2>
             </div>
         </div>
 
-
         <div class="card-deck">
             <div class="card">
-                <img src="./img/card1.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card1.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Прийти к идеальному весу без голодовок и подсчета калорий</h5>
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Прийти к идеальному весу без голодовок и подсчета калорий
+                    </h5>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/card2.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card2.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Быть здоровой и растить здоров детей</h5>
-
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Быть здоровой и растить здоров детей
+                    </h5>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/card3.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card3.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Повысить энергетический тонус, меньше уставать</h5>
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Повысить энергетический тонус, меньше уставать
+                    </h5>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/card4.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card4.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Излучать счастье и здоровье</h5>
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Излучать счастье и здоровье
+                    </h5>
                 </div>
             </div>
         </div>
         <div class="card-deck mt-4">
             <div class="card">
-                <img src="./img/card5.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card5.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Повысить желание заниматься спортом</h5>
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Повысить желание заниматься спортом
+                    </h5>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/card6.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card6.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Избавиться от болезней желудка, проблем с кожей, выпадением
-                        волос</h5>
-
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Избавиться от болезней желудка, проблем с кожей, выпадением волос
+                    </h5>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/card7.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card7.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Подобрать питание для себя и каждого члена семьи</h5>
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Подобрать питание для себя и каждого члена семьи
+                    </h5>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/card8.jpeg" class="card-img-top" alt="...">
+                <img src="./img/card8.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title"
-                        style="text-align: center; font-size: 32px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                        Научиться выбирать безопасные продукты</h5>
-
+                    <h5 class="card-title" style="text-align: center;
+                        font-size: 32px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                        sans-serif;">
+                        Научиться выбирать безопасные продукты
+                    </h5>
                 </div>
             </div>
         </div>
@@ -275,21 +314,21 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/ca1.jpeg" class="d-block w-100" alt="...">
+                    <img src="./img/ca1.jpeg" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Метка первого слайда</h5>
                         <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/ca2.png" class="d-block w-100" alt="...">
+                    <img src="./img/ca2.png" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Метка второго слайда</h5>
                         <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/ca3.jpeg" class="d-block w-100" alt="...">
+                    <img src="./img/ca3.jpeg" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Метка третьего слайда</h5>
                         <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
@@ -308,14 +347,6 @@
         <!-- Carousel end -->
 
         <!-- Дополнительный JavaScript; выберите один из двух! -->
-
-        <!-- Вариант 1: пакет jQuery и Bootstrap (включает Popper) -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-        </script>
 
         <!-- Вариант 2: Отдельные JS для Popper и Bootstrap -->
         <!--
