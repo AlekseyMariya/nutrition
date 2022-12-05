@@ -1,8 +1,9 @@
 <?php
 
-$login = filter_var(trim($_POST['login']), FILTER_SANITIZE_STRING); // Удаляет все лишнее и записываем значение в переменную //$login
+$login = filter_var(trim($_POST['login']), FILTER_SANITIZE_STRING); 
 $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
 $pass = filter_var(trim($_POST['pass']), FILTER_SANITIZE_STRING);
+// Добавить остальные значения
 
 if (mb_strlen($login) < 5 || mb_strlen($login) > 50) {
     echo 'Недопустимая длина логина';
@@ -12,7 +13,7 @@ if (mb_strlen($login) < 5 || mb_strlen($login) > 50) {
     exit();
 } // Проверяем длину имени
 
-password_hash(string $password, string|int|null $algo, array $options = []): string // Создаем хэш из пароля
+password_hash(string $password, string|int|null $algo, array $options = []): string 
 
 $mysql = new mysqli(
     'localhost',
